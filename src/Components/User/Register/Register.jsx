@@ -33,9 +33,9 @@ function Register() {
         <label htmlFor="College">College Name</label>
         <input type="text" id="container__collegeName" name="CollegeName" placeholder="College name" />
       </div>
-      <div className="container__user-input-box">
+      <div className="container__user-input-box" id='address'>
         <label htmlFor="address">Address</label>
-        <input type="text" id="container__address" name="address" placeholder="Current address" />
+        <textarea type="text"  id="container__address" name="address" placeholder="Current address" ></textarea>
       </div>
     </div>
     <div className="container__gender-details-box">
@@ -49,7 +49,7 @@ function Register() {
         <label htmlFor="other">Other</label>
       </div>
     </div>
-    <button className="container__btn" type="button" onClick={() => { window.location.href = '#' }}>Register</button>
+    <button className="container__btnOne" type="button" onClick={() => { window.location.href = '#' }}>Register</button>
   </form>
 </div>
 </>

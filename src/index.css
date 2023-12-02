@@ -81,7 +81,8 @@ border-radius:50%;
   transition: 0.2s ease;
 }
 .homeButton {
-  margin-top: 350px;
+  margin-top: 400px;
+  color: #700c94;
 }
 span{
   /* background: #60049a; */
@@ -121,7 +122,7 @@ button:hover{
   content: '';
   height: 3px;
   width:0;
-  background: #009688;
+  background: #700c94;
   position: absolute;
   left:0;
   bottom:-10px;

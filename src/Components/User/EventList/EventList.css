@@ -202,6 +202,7 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
 
 
     padding: -13px;
+	font-size:xx-large;
     box-shadow: 0 5px 15px rgba(184, 99, 233, 0.26);
     z-index: 50;
     position:relative ;

@@ -55,9 +55,34 @@ function Login() {
       return passwordCheck && isMinLength;
     }
 
+    const submitLogin = async (e) => {
+        e.preventDefault();
+        try {
+          if (
+            !emailValid.trim() ||
+            !passwordValid
+          
+          ) {
+            toast.error("Enter all fields");
+            return;
+          }
+    
+          const result = await adminAxios.post("/login", {
+            emailValid,
+            passwordValid
+          });
+    
+          if (result.data.status) {
+            toast.success("Product Successfully added");
+          }
+        } catch (error) {
+          console.log("error");
+        }
+      };
+
 
   return (
-    <div className="h-screen flex justify-center items-center bg-[#1a1a1a]">
+    <form onSubmit={submitLogin} className="h-screen flex justify-center items-center bg-[#1a1a1a]">
     <div className="bg-black sm:h-5/6  h-screen flex flex-col items-center w-full  sm:w-[38%] rounded-md">
       <h1 className="text-white  text-center mt-28 sm:mt-12  text-2xl font-bold mb-6 ">
         LOGIN
@@ -111,7 +136,7 @@ function Login() {
         Log In
       </button>
     </div>
-  </div>
+  </form>
   )
 }
 

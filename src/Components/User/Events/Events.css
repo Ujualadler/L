@@ -39,6 +39,10 @@
   padding: 10px;
   margin-left: 20px;
 }
+
+.event-right h1{
+  font-size: xx-large;
+}
 .event-right p{
   color: white;
   font-size: 18px;
@@ -63,6 +67,7 @@
   color: #883ff9;
   margin-top: 20px;
   text-align: center;
+  
 }
 @media(max-width:650px){
   .event-card{

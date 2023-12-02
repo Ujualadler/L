@@ -7,10 +7,10 @@ function HomePage() {
         {/* <img src="./logo.jpg" height="290" className="logo" /> */}
         <div className='homeButton'>
         <p>
-          <i>WELCOME TO <b>LAKSHYA </b> 2024 ORGANISED BY GECK</i>
+          <p>WELCOME TO <b>LAKSHYA </b> 2024 ORGANISED BY GECK</p>
           <br />
         </p>
-          <a href="reg.html">
+          <a >
             <button type="button"><span></span> REGISTER NOW</button>
           </a>
         </div>

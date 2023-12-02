@@ -20,7 +20,7 @@ body{
 .container{
     width: 100%;
     max-width: 650px;
-	background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(3, 1, 41, 1) 28%, rgb(35, 11, 70) 79%, rgb(44, 6, 68) 100%);
+	background: linear-gradient(180deg, rgb(8, 8, 8) 0%, rgb(14, 14, 17) 28%, rgb(14, 12, 15) 79%, rgb(18, 18, 19) 100%);
     padding: 28px;
     border-radius: 10px;
     box-shadow:5px 5px 10px 2px  rgba(6, 0, 8, 0.66);
@@ -79,6 +79,22 @@ body{
     padding: 0 10px;
 }
 
+#address{
+    height:90px;
+    /* background: #882727; */
+}
+#address textarea::-webkit-scrollbar{
+   width: 0;
+}
+
+#address textarea{
+    height: 100%;
+    width: 95%;
+    padding: 5px;
+    border-radius: 7px;
+    outline: none;
+}
+
 .container__gender-title{
     color: white;
     font-size: 24px;
@@ -102,10 +118,9 @@ body{
         cursor: pointer;
  }
 
- .container__btn{
+
+ .container__btnOne{
     margin-top: 40px;
- }
- .container__btn {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -114,10 +129,10 @@ body{
     border: none;
     border-radius: 10px;
     color: rgb(209, 209,209);
-    background: #36004d;
+    background-color: #3e0a0d !important;
  }
 
-.container__btn:hover{
+.container__btnOne:hover{
     background:#030003b3;
     color:rgba(252, 249, 249, 0.7);
 
